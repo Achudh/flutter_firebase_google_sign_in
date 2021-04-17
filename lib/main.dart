@@ -1,4 +1,3 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_firebase_auth/blocs/auth_bloc.dart';
@@ -25,25 +24,6 @@ class Root extends StatelessWidget {
         home: AuthWrapper(),
       ),
     );
-    // MultiProvider(
-    //   providers: [
-    //     Provider<AuthenticationServices>(
-    //       create: (_) => AuthenticationServices(),
-    //     ),
-    //     StreamProvider(
-    //       create: (context) =>
-    //           context.read<AuthenticationServices>().currentUser,
-    //       initialData: null,
-    //     ),
-    //   ],
-    //   child: MaterialApp(
-    //     theme: ThemeData(
-    //         brightness: Brightness.dark,
-    //         primaryColor: Colors.white,
-    //         visualDensity: VisualDensity.adaptivePlatformDensity),
-    //     home: AuthWrapper(),
-    //   ),
-    // );
   }
 }
 
